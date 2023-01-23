@@ -9,8 +9,8 @@ var randomNumber = Console.ReadLine();
 
 Console.WriteLine($"\nWynik dla analizowanej liczby {randomNumber} to:");
 
-string numberInString = randomNumber.ToString();
-char[] lettersOfNumber = numberInString.ToArray();
+//string numberInString = randomNumber.ToString();
+char[] lettersOfNumber = randomNumber.ToArray();
 
 List<char> numbers = new List<char>();
 numbers.Add('0');
@@ -32,8 +32,7 @@ foreach (var number in numbers)
         if (number == n)
             count++;
     }
-    Console.WriteLine("");
-    Console.WriteLine(number + " => " + count);
+    Console.WriteLine("\n" + number + " => " + count);
 }
 
 
