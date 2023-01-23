@@ -2,8 +2,6 @@
 //Przygotuj program, który policzy ilość wystąpięń danej cyfry w podanej przez użytkownika liczbie.
 //Wynik wydrukuj w konsoli.
 
-//using System.Drawing;
-
 Console.WriteLine("\nPodaj liczbę: ");
 var randomNumber = Console.ReadLine();
 
@@ -32,7 +30,7 @@ foreach (var number in numbers)
         if (number == n)
             count++;
     }
-    Console.WriteLine("\n" + number + " => " + count);
+    Console.WriteLine($"\n {number} => {count}");
 }
 
 
